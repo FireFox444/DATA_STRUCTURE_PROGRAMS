@@ -1,0 +1,49 @@
+// Write a program that will read n elements in one dimensional array.
+// Find out the total number of even elements and odd elements in the array.
+// Print all elements, total number of odd elements and total number of even elements.
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+
+	clrscr();
+
+	cout<<"Read n elements in one dimensional array.\n";
+	cout<<"Print total number of even and odd elements.\n";
+
+	int a[50],i,n,cnt1=0,cnt2=0;
+
+	cout<<"\nENTER NUMBER OF ELEMENTS : ";
+	cin>>n;
+
+	cout<<"\n\nENTER "<<n<<" ELEMENTS IN ARRAY : \n";
+
+	for(i=0;i<n;i++)
+	{
+		cout<<"\tENTER ELEMENT "<<i+1<<" : ";
+		cin>>a[i];
+
+		if(a[i]%2==0)
+		    cnt1++;
+		else
+		    cnt2++;
+
+	}
+
+	cout<<"\nONE DIMENSIONAL ARRAY : \n";
+
+
+	for(i=0;i<n;i++)
+	{
+		cout<<"\n\tELEMENT "<<i+1<<" IS : "<<a[i];
+	}
+
+
+	cout<<"\n\nTOTAL NO OF EVEN NUMBERS ARE : "<<cnt1;
+	cout<<"\nTOTAL NO OF ODD NUMBERS ARE : "<<cnt2;
+
+	getch();
+
+}

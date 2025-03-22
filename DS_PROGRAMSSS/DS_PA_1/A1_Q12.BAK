@@ -1,0 +1,47 @@
+// Write a program that will read n elements in one dimensional array.
+// Also input an integer.
+// Find out and print how many values are less than the given integer from the array
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+
+	clrscr();
+	cout<<"Read n elements in one dimensional array.\nInput an Integer & Print the Array & total number of values < the given integer.\n";
+
+	int a[50],i,n,cnt=0,ch;
+
+	cout<<"\nENTER NUMBER OF ELEMENTS : ";
+	cin>>n;
+
+	cout<<"\n\nENTER "<<n<<" ELEMENTS IN ARRAY : \n";
+
+	for(i=0;i<n;i++)
+	{
+		cout<<"\tENTER ELEMENT ["<<i+1<<"] : ";
+		cin>>a[i];
+
+
+	}
+
+	cout<<"\n\tENTER ANY NUMBER : ";
+	cin>>ch;
+    
+	cout<<"\n\nONE DIMENSIONAL ARRAY : \n";
+
+	for(i=0;i<n;i++)
+	{
+		if(a[i]<ch)
+		     cnt++;
+
+		cout<<"\n\tELEMENT ["<<i+1<<"] IS : "<<a[i];
+	}
+
+
+	cout<<"\n\n"<<cnt<<" VALUES ARE LESS THAN "<<ch<<" IN ARRAY";
+
+	getch();
+
+}

@@ -1,0 +1,35 @@
+
+/*
+  write a program to input 5 element in one dimensional array. 
+  Display all the elements.
+*/
+
+
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+
+	clrscr(); 
+	cout<<"Write a program to input 5 element in one dimensional array.\nDisplay all the elements.";
+	
+	int a[5],i;
+	cout<<"\n\nENTER 5 ELEMENTS IN ARRAY : \n";
+
+	for(i=0;i<5;i++)
+	{
+		cout<<"\tENTER ELEMENT ["<<i+1<<"] : ";
+		cin>>a[i];
+	}
+
+	cout<<"\nONE DIMENSIONAL ARRAY : \n";
+
+	for(i=0;i<5;i++)
+	{
+		cout<<"\n\tELEMENT ["<<i+1<<"] IS : "<<a[i];
+	}
+	getch();
+
+}
